@@ -59,6 +59,8 @@ public class myFirstProgram {
         
         Thread.sleep(1000);
         
+        
+        //Logout button code................
 	     WebElement element = driver.findElement(By.id("userName"));
 	     Actions action = new Actions(driver);
 	     action.moveToElement(element).build().perform();

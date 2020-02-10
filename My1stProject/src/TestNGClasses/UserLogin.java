@@ -120,7 +120,7 @@ public class UserLogin {
 	         cell.setCellType(CellType.STRING);
 	         WebElement passwordID = driver.findElement(By.id("password"));
 	         passwordID.clear();
-	         passwordID.sendKeys(cell.getStringCellValue());
+	         passwordID.sendKeys("@live704");
 	         System.out.println(cell.getStringCellValue());
 	     }
 	    
@@ -215,6 +215,11 @@ public class UserLogin {
 	  		  	//create team button clicked--------------------
 	  		    System.out.println("Create team button is clicked");
 	  		    
+	  		    
+	  		  if(existsElement("//div[@id = 'container']/div/div/div[2]/div[2]/div/div/div[3]/div[2]/div")==true)
+    			{
+    				 wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id = 'container']/div/div/div[2]/div[2]/div/div/div[3]/div[2]/div"))).click();
+    			}
 	  		   
 				wait.until(ExpectedConditions.elementToBeClickable(By.className("si-lp-bt"))).click();
 	  		    
@@ -326,9 +331,9 @@ public class UserLogin {
 			playerAllRounderselection1.click();
 			
 			//2st Allrounder..
-		  	WebElement playerAllRoundername2 = driver.findElement(By.xpath("//li[2]/div/div/div/div[1]/div/div[2]/div"));
-		    WebElement playerAllRoundercredit2 = driver.findElement(By.xpath("//li[2]/div/div/div/div[2]/span"));
-			WebElement playerAllRounderselection2 = driver.findElement(By.xpath("//li[2]/div/div/div/div[3]/div"));
+		  	WebElement playerAllRoundername2 = driver.findElement(By.xpath("//li[6]/div/div/div/div[1]/div/div[2]/div"));
+		    WebElement playerAllRoundercredit2 = driver.findElement(By.xpath("//li[6]/div/div/div/div[2]/span"));
+			WebElement playerAllRounderselection2 = driver.findElement(By.xpath("//li[6]/div/div/div/div[3]/div"));
 			System.out.println(playerAllRoundername2.getText()+' '+playerAllRoundercredit2.getText());
 			playerAllRounderselection2.click();
 			

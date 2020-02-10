@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGClasses.UserLogin">
+      <class name="TestNGClasses.SoccerData">
         <methods>
-          <include name="SelectandValidateMarket"/>
-          <include name="ReadData"/>
+          <include name="readData"/>
         </methods>
-      </class> <!-- TestNGClasses.UserLogin -->
+      </class> <!-- TestNGClasses.SoccerData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
